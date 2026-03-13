@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 from datetime import datetime, timedelta, timezone
+import os
 
 # --- 設定 ---
 intents = discord.Intents.default()
@@ -55,4 +56,5 @@ async def setup(ctx):
     await ctx.send("【入退室管理】ボタンを押して記録してください", view=MyView())
 
 token = os.getenv('DISCORD_TOKEN')
+
 bot.run(token)
