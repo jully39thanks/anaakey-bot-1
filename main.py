@@ -28,7 +28,7 @@ intents.members = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 JST = timezone(timedelta(hours=+9), 'JST')
-LOG_CHANNEL_ID = 1481594264533209088  # ログ用チャンネルID
+LOG_CHANNEL_ID = 1459786701143670794  # ログ用チャンネルID
 
 # --- ボタンのクラス（ボットが再起動しても有効） ---
 class MyView(discord.ui.View):
