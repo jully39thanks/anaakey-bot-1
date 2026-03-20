@@ -18,7 +18,7 @@ LOG_CHANNEL_ID = 1459786701143670794
 # --- ボタンのクラス（永続化対応） ---
 class MyView(discord.ui.View):
     def __init__(self):
-        # timeout=None にすることで、ボットが再起動してもボタンが死なないようにします
+        # timeout=None にすることで、ボットが再起動してもボタンが死なない
         super().__init__(timeout=None) 
 
     async def send_log(self, interaction: discord.Interaction, status_text: str, color: discord.Color):
